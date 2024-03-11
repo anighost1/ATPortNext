@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import AppBar from './AppBar';
 import Toolbar from './Toolbar';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
     Stack,
     ListItemButton,
@@ -22,6 +23,7 @@ import CloseIcon from '@mui/icons-material/Close';
 function NavBar() {
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+    const pathname = usePathname()
 
     const triggerDrawer = () => {
         setIsDrawerOpen(state => !state)
@@ -66,16 +68,16 @@ function NavBar() {
                             height: '100%'
                         }}
                     >
-                        <ListItemButton component={Link} href='/' sx={{ textAlign: 'center' }}>
+                        <ListItemButton component={Link} href='/' className={pathname === '/'?'active':''} sx={{ textAlign: 'center' }}>
                             <ListItemText primary={'Home'} />
                         </ListItemButton>
-                        <ListItemButton component={Link} href='/about' sx={{ textAlign: 'center' }}>
+                        <ListItemButton component={Link} href='/about' className={pathname === '/about'?'active':''} sx={{ textAlign: 'center' }}>
                             <ListItemText primary={'About'} />
                         </ListItemButton>
-                        <ListItemButton component={Link} href='/projects' sx={{ textAlign: 'center' }}>
+                        <ListItemButton component={Link} href='/projects' className={pathname === '/projects'?'active':''} sx={{ textAlign: 'center' }}>
                             <ListItemText primary={'Projects'} />
                         </ListItemButton>
-                        <ListItemButton component={Link} href='/contact' sx={{ textAlign: 'center' }}>
+                        <ListItemButton component={Link} href='/contact' className={pathname === '/contact'?'active':''} sx={{ textAlign: 'center' }}>
                             <ListItemText primary={'Contact'} />
                         </ListItemButton>
                     </Stack>
