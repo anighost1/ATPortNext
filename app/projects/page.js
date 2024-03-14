@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import withRoot from "@/theme/withRoot"
 import { styled } from '@mui/material/styles';
 import {
@@ -63,7 +63,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const projects = [
     {
-        url: '/svg/hollowed-boxes.svg',
+        image: '/svg/hollowed-boxes.svg',
         title: 'Pin at Ranchi',
         width: '60%',
         description: 'A Full stack project that holds details of various places in Ranchi for hangout, stay etc. Tech stack used is MERN. Project is has three parts -client frontend, admin panel.',
@@ -84,10 +84,14 @@ const projects = [
                 name: 'Admin panel code',
                 url: 'https://github.com/anighost1/pin-at-ranchi-admin'
             },
+            {
+                name: 'Admin panel Backend',
+                url: 'https://github.com/anighost1/pin-at-ranchi-admin-server'
+            },
         ]
     },
     {
-        url: '/svg/geometric-intersection.svg',
+        image: '/svg/geometric-intersection.svg',
         title: 'Fotos Dot Get',
         width: '40%',
         description: 'A web application to get free photos. It is developed using Reactjs and it uses Unsplash API for data.',
@@ -103,7 +107,7 @@ const projects = [
         ]
     },
     {
-        url: '/svg/sun-tornado.svg',
+        image: '/svg/sun-tornado.svg',
         title: 'Responsive template',
         width: '50%',
         description: 'A simple responsive template having header, sidebar, body and footer using html, css and js. Feel free to use it for your project. Everyone is invited to contribute and make it even better.',
@@ -119,7 +123,7 @@ const projects = [
         ]
     },
     {
-        url: '/svg/repeating-chevrons.svg',
+        image: '/svg/repeating-chevrons.svg',
         title: 'Stack GUI',
         width: '50%',
         description: 'A simple representation of a stack but with interactive GUI.',
@@ -178,7 +182,7 @@ function Projects() {
                             <ImageIconButton
                                 key={item.title}
                                 style={{
-                                    width: item.width,
+                                    width: '50%',
                                 }}
                                 onClick={() => { selectProject(item) }}
                             >
@@ -197,18 +201,10 @@ function Projects() {
                                 <Box
                                     component={Image}
                                     alt={item.title}
-                                    src={item.url}
-                                    layout="fill"
-                                    objectFit="cover"
+                                    src={item.image}
+                                    fill={true}
                                     sx={{
-                                        position: 'absolute',
-                                        left: 0,
-                                        right: 0,
-                                        top: 0,
-                                        bottom: 0,
-                                        backgroundSize: 'cover',
-                                        backgroundPosition: 'center 40%',
-                                        // backgroundImage: `url(${item.url})`,
+                                        objectFit: 'cover'
                                     }}
                                 />
                                 <ImageBackdrop className="imageBackdrop" />

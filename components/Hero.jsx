@@ -20,16 +20,10 @@ function Hero() {
             }}
         >
             {/* Increase the network loading priority of the background image. */}
-            {/* <img
+            <img
                 style={{ display: 'none' }}
                 src={backgroundImage}
                 alt="increase priority"
-            /> */}
-            <Image
-                style={{ display: 'none' }}
-                src={backgroundImage}
-                alt="increase priority"
-                fill={true}
             />
             <Typography color="inherit" align="center" variant="h2" marked="center">
                 {/* <span>A</span><span className='after'>nil</span> <span className='initial'>T</span><span className='after'>igga</span> */}

@@ -12,6 +12,21 @@ import {
     IconButton,
 } from '@mui/material';
 import withRoot from '@/theme/withRoot';
+import Link from 'next/link';
+
+
+function Copyright() {
+    return (
+        <Typography variant="body2" color="text.secondary">
+            {'Copyright © '}
+            <Link color="inherit" href="/">
+                Anil Tigga
+            </Link>{' '}
+            {new Date().getFullYear()}
+            {'.'}
+        </Typography>
+    );
+}
 
 
 function Footer() {
@@ -58,11 +73,7 @@ function Footer() {
                             </IconButton>
                         </Tooltip>
                     </Stack>
-                    <Typography
-                        variant={'body2'}
-                    >
-                        This site is created and maintained by Anil Tigga
-                    </Typography>
+                    <Copyright/>
                 </Stack>
             </Container>
         </Typography>
