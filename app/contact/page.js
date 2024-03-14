@@ -24,7 +24,8 @@ const DisplayAlert = ({ severity, message, alertOpen }) => {
                 position: 'relative',
                 top: '2rem',
                 display: alertOpen ? 'flex' : 'none',
-                transition: 'ease 2s'
+                transition: 'ease 2s',
+                mt: 5
             }}
         >
             {message}
