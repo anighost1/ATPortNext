@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect } from 'react'
 import {
     Typography,
     Dialog,
@@ -39,7 +41,7 @@ export default function ProjectDetail({ data, open, handleClose }) {
                     <IconButton
                         onClick={handleClose}
                     >
-                        <CloseIcon />
+                        <CloseIcon fontSize='large' />
                     </IconButton>
                 </Stack>
                 <Container component="section" sx={{ mt: 8, mb: 4, minHeight: '70vh' }}>

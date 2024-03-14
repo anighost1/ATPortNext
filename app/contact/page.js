@@ -80,18 +80,17 @@ function Contact() {
 
     return (
         <>
-            <Backdrop
+            {inProgress && (<Backdrop
                 sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
                 open={inProgress}
             >
                 <CircularProgress color="inherit" />
-            </Backdrop>
-            <Container component="section" sx={{ mt: 8, mb: 4, minHeight: '70vh' }}>
+            </Backdrop>)}
+            <Container component="section" sx={{ mt: 2, mb: 0, minHeight: '70vh' }}>
                 <DisplayAlert severity={alertData.severity} message={alertData.message} alertOpen={alertOpen} />
                 {/* <DisplayAlert severity={'success'} message={'bhfbekbv'} alertOpen={alertOpen} /> */}
                 <Box
                     sx={{
-                        mt: '4rem',
                         padding: 2
                     }}
                 >

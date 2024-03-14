@@ -15,6 +15,7 @@ import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+
 function About() {
     return (
         <>
@@ -39,18 +40,8 @@ function About() {
                         A software engineer who is skilled in MERN stack.
                         He has experience working with Laravel and SQL as well while developing a CRM.
                         He transforms innovative ideas into top-tier software solutions,
-                        specializing in front-end development with React.js and building robust back-end systems using Node.js and Laravel.
+                        specializing in front-end development with React.js and Next.js, while also proficient in building robust back-end systems using Node.js and Laravel.
                         His expertise drives dynamic web application development.
-                    </Typography>
-                    <Typography
-                        variant='body'
-                        sx={{
-                            lineHeight: '2rem',
-                            wordSpacing: '0.2rem',
-                            textAlign: 'justify'
-                        }}
-                    >
-                        These days getting exprience in Next.js as well.
                     </Typography>
                     <Stack
                         direction={'row'}

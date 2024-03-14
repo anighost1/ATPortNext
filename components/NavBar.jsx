@@ -34,7 +34,8 @@ function NavBar() {
             <AppBar
                 position="fixed"
                 sx={{
-                    zIndex: (theme) => theme.zIndex.drawer + 1
+                    zIndex: (theme) => theme.zIndex.drawer + 1,
+                    overflow:'hidden'
                 }}
             >
                 <Toolbar
@@ -45,14 +46,13 @@ function NavBar() {
                         }
                     }}
                 >
-
                     <Box
                         component={Link}
                         href={'/'}
                         sx={{
                             fontSize: 24,
                             cursor: 'pointer',
-                            textDecoration: 'none'
+                            textDecoration: 'none',
                         }}
                     >
                         <Box component='h1' sx={{ color: 'secondary.main' }}>AT</Box>
