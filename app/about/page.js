@@ -37,11 +37,17 @@ function About() {
                             textAlign: 'justify'
                         }}
                     >
-                        A software engineer who is skilled in MERN stack.
-                        He has experience working with Laravel and SQL as well while developing a CRM.
-                        He transforms innovative ideas into top-tier software solutions,
-                        specializing in front-end development with React.js and Next.js, while also proficient in building robust back-end systems using Node.js and Laravel.
-                        His expertise drives dynamic web application development.
+                        Anil Tigga is a Full Stack Developer with over 1.5 years of experience in building and enhancing web applications using technologies such as Node.js, React.js, PostgreSQL, and Laravel. In his current role, he has been instrumental in developing a Procurement and Inventory Management System, implementing multi-role functionality, and leveraging Prisma ORM for efficient database management. He has also contributed to the development of an HRMS application, focusing on creating scalable and user-centric solutions.
+                    </Typography>
+                    <Typography
+                        variant='body'
+                        sx={{
+                            lineHeight: '2rem',
+                            wordSpacing: '0.2rem',
+                            textAlign: 'justify'
+                        }}
+                    >
+                        Previously, Anil worked on a Customer Relationship Management (CRM) system, where he developed APIs using Laravel and created responsive, intuitive user interfaces with React.js and Material UI. Additionally, he has enhanced the UI of multiple React.js projects, delivering seamless and engaging user experiences. Anil's expertise lies in designing and delivering robust, feature-rich applications tailored to meet diverse business needs.
                     </Typography>
                     <Stack
                         direction={'row'}

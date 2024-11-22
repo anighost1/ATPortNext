@@ -6,7 +6,6 @@ import HeroLayout from './HeroLayout';
 // import bgImage from '/subtle-prism.svg'
 import { Box } from '@mui/material';
 import withRoot from '@/theme/withRoot';
-import Image from 'next/image';
 
 const backgroundImage = '/subtle-prism.svg'
 
@@ -43,7 +42,7 @@ function Hero() {
                 variant="h5"
                 sx={{ mb: 4, mt: { xs: 4, sm: 10 } }}
             >
-                A software engineer who is eager to learn more and build robust systems.
+                A software engineer passionate about continuous learning and building robust, scalable systems.
             </Typography>
         </HeroLayout>
     );
